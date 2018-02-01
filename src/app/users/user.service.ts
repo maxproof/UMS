@@ -12,7 +12,7 @@ export class UserService {
     return [
       {
         firstname: 'Max1',
-        lastname: 'Carbone1',
+        lastname: 'Proof1',
         socialsecuritycode: 'FGHJFJHGFGF',
         email: 'm@m.org',
         region: 'BE',
@@ -21,7 +21,7 @@ export class UserService {
       },
       {
         firstname: 'Max2',
-        lastname: 'Carbone2',
+        lastname: 'Proof2',
         socialsecuritycode: 'FGHJFJHGFGF',
         email: 'm@m.org',
         region: 'BE',
@@ -30,7 +30,7 @@ export class UserService {
       },
       {
         firstname: 'Max3',
-        lastname: 'Carbone3',
+        lastname: 'Proof3',
         socialsecuritycode: 'FGHJFJHGFGF',
         email: 'm@m.org',
         region: 'BE',
@@ -39,7 +39,7 @@ export class UserService {
       },
       {
         firstname: 'Max4',
-        lastname: 'Carbone4',
+        lastname: 'Proof4',
         socialsecuritycode: 'FGHJFJHGFGF',
         email: 'm@m.org',
         region: 'BE',
