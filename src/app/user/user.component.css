@@ -12,10 +12,18 @@ button {
 }
 
 button.delete {
-  background: white;
-  color: red;
+  background: red;
+  color: white;
 }
 
+button.edit {
+  color: #fff;
+  background: blue;
+}
 
+button.update {
+  color: #fff;
+  background: green;
+}
 
 
