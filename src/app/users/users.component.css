@@ -1,18 +1,5 @@
-table {
-  border: 1px solid grey;
-}
-
-th {
-  background: black;
-  color: green;
-}
-
-th, td {
-  padding: 5px;
-  border: 1px solid white;
-}
-
-td {
-  background: silver;
-  color: red;
+caption {
+  font-weight: bold;
+  color: black;
+  font-size: x-large;
 }

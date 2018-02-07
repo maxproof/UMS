@@ -8,6 +8,10 @@ import {UsersComponent} from './users/users.component';
 import {UserService} from './services/user.service';
 import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import { NavComponent } from './nav/nav.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalBasicComponent } from './modal-basic/modal-basic.component';
 
 
 @NgModule({
@@ -15,11 +19,15 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     AppComponent,
     UsersComponent,
     UserComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    NavComponent,
+    ModalBasicComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AngularFontAwesomeModule,
+    NgbModule.forRoot()
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -72,9 +72,6 @@ export class UserService {
   }
 
   createUser(user: UserInterface) {
-      this.users.splice(0, 0, user);
-    }
-
+    this.users.splice(0, 0, user);
   }
-
 }
