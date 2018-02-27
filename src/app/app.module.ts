@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {FormsModule} from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import {UsersComponent} from './users/users.component';
 import {UserService} from './services/user.service';
@@ -12,7 +10,23 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { NavComponent } from './nav/nav.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalBasicComponent } from './modal-basic/modal-basic.component';
+import {RouterModule, Routes} from '@angular/router';
 
+const routes: Routes = [
+  {
+    path: 'users',
+    component: UsersComponent
+  },
+  {
+    path: '',
+    redirectTo: 'users',
+    pathMatch: 'full'
+  },
+  {
+    path: 'users/new',
+    component: UserComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -27,7 +41,8 @@ import { ModalBasicComponent } from './modal-basic/modal-basic.component';
     BrowserModule,
     FormsModule,
     AngularFontAwesomeModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot(routes)
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
