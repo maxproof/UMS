@@ -26,7 +26,7 @@ const routes: Routes = [
     path: 'users/new',
     component: UserComponent
   }
-]
+ ];
 
 @NgModule({
   declarations: [
