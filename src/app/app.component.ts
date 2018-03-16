@@ -7,18 +7,16 @@ import {User} from './classes/user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  showForm = false;
-
+    showForm = false;
   userSelected: User = new User();
 
-  updateUser(user: User) {
-    this.showForm = true;
-    this.userSelected = user;
-  }
+    updateUser(user: User) {
+        this.showForm = true;
+      this.userSelected = user;
 
+  }
   newUser() {
-    this.userSelected = new User();
-    this.showForm = true;
+        this.userSelected = new User();
+      this.showForm = true;
   }
 }

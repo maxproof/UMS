@@ -1,19 +1,28 @@
-<td>{{user.firstname}}</td>
+<td> {{user.name}}</td>
 <td>{{user.lastname}}</td>
 <td>{{user.email}}</td>
-<td>{{user.phonenumber}}</td>
-<td>{{user.region}}</td>
+<td>{{user.phone}}</td>
+<td>{{user.province}}</td>
+
 <td class="buttons">
-  <div class="row">
-    <div class="col-sm-7">
-      <button class="btn btn-primary btn-sm" (click)="updateUser()">
-        <fa name="pencil"></fa>
-      </button>
+    <div class="row">
+        
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="showUserDetaill()">
+                <fa name="info" fixed="true" ></fa>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="updateUser()">
+                <fa name="pencil" fixed="true" ></fa>
+            </button>
+        </div>
+        <div class="col-sm-3"> 
+            <button class="btn btn-danger" (click)="deleteUser()">
+                <fa name="trash"  fixed="true" ></fa>
+            </button>
+        </div>
+       
+   
     </div>
-    <div class="col-sm-5">
-      <button class="btn btn-danger btn-sm" (click)="deleteUser()">
-        <fa name="trash-o"></fa>
-      </button>
-    </div>
-  </div>
 </td>

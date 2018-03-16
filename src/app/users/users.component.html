@@ -1,14 +1,17 @@
-<caption>{{title}}</caption>
-`<table class="table table-striped table-sm table-dark">
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Email</th>
-    <th>Phone Number</th>
-    <th>Region</th>
-    <th>Actions</th>
-  </tr>
-  <tr app-user *ngFor="let user of users" [user-data]="user" (onDeleteUser)="onDeleteUser($event)" (onSelectUser)="onSelectUser($event)">
+<h2>{{title}}</h2>
+<table class="table table-striped table-sm table-dark">
+  
+    <tr>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Province</th>
+        <th class="action">Actions</th>
+    </tr>
+  <tr app-user="user" *ngFor ="let user of users" [user-data] = "user"
+      (onDeleteUser) = "onDeleteUser($event)"  (onSelectUser) = "onSelectUser($event)"
+  >
+    
   </tr>
 </table>
-`
